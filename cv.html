@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/multiple.js/0.0.1/multiple.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+
+
+<body>
+    <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-md-center"
+        style="background-color: #ffffff;">
+        <a class=" navbar-brand" href="index.html">
+            <img src="TsouvalasCircleCropped.png" width="40" height="40" alt="">
+        </a>
+        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto text-md-center text-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home mr-1"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certifications.html">Certifications</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="index.html"
+                        style="color: #383838">Billy
+                        Tsouvalas</a>
+                </li>
+
+                <li class=" nav-item">
+                    <a class="nav-link" href="research.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav flex-row justify-content-md-start justify-content-sm-between flex-nowrap">
+                <li class="nav-item"><a class="nav-link"
+                        href="https://www.linkedin.com/in/billy-tsouvalas-354997147/"><i
+                            class="fa fa-linkedin-square"></i></a> </li>
+                <li class="nav-item"><a class="nav-link"
+                        href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en"><i
+                            class="fa fa-graduation-cap"></i></a> </li>
+                <!--
+                                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/billy.tsouvalas/"><i
+                                            class="fa fa-facebook mr-1"></i></a> </li>
+                                
+                                <li class="nav-item"><a class="nav-link" href="https://twitter.com/btsouvalas?lang=en"><i
+                                            class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-github"></i></a> </li>
+                                
+                                        -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="img1">
+        <section id="showcase" style="padding-bottom: 100px; padding-top: 100px;">
+            <br>
+            <br>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="d-block d-sm-none">
+                        <div class="card" style="width: 130px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#educationAnchor">
+                                <img src="GraduateLogo.png" class="card-img-top" alt="CVLogo">
+                                <p class="card-text"
+                                    style="font-size:15px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Education</p>
+
+                            </a>
+                        </div>
+                        <div class="card" style="width: 130px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="research.html">
+                                <img src="ResearchMagnifyStatistics.png" class="card-img-top"
+                                    alt="ResearchMagnifyStatistics">
+                                <p class="card-text"
+                                    style="font-size:15px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Research</p>
+                            </a>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="card" style="width: 130px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en">
+                                <img src="PaperLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:15px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Publications
+                                </p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 130px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#workExperienceAnchor">
+                                <img src="WorkLogo.png" class="card-img-top" alt="DiplomaLogo">
+                                <p class="card-text"
+                                    style="font-size:15px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Work</p>
+                            </a>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="card" style="width: 130px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#toolsAnchor">
+                                <img src="ToolsLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:15px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Skills & Tools
+                                </p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 130px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#languagesAnchor">
+                                <img src="LanguagesLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:15px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Languages
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block d-md-none">
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#educationAnchor">
+                                <img src="GraduateLogo.png" href="educationAnchor" class="card-img-top" alt="CVLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Education</p>
+
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="research.html">
+                                <img src="ResearchMagnifyStatistics.png" href="researchAnchor" class="card-img-top"
+                                    alt="ResearchMagnifyStatistics">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Research</p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en">
+                                <img src="PaperLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Publications
+                                </p>
+                            </a>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#workExperienceAnchor">
+                                <img src="WorkLogo.png" class="card-img-top" alt="DiplomaLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Work</p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#toolsAnchor">
+                                <img src="ToolsLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Skills & Tools
+                                </p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#languagesAnchor">
+                                <img src="LanguagesLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Languages
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block d-lg-none">
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#educationAnchor">
+                                <img src="GraduateLogo.png" class="card-img-top" alt="CVLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Education</p>
+
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="research.html">
+                                <img src="ResearchMagnifyStatistics.png" class="card-img-top"
+                                    alt="ResearchMagnifyStatistics">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Research</p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en">
+                                <img src="PaperLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Publications
+                                </p>
+                            </a>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#workExperienceAnchor">
+                                <img src="WorkLogo.png" class="card-img-top" alt="DiplomaLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Work</p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#toolsAnchor">
+                                <img src="ToolsLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Skills & Tools
+                                </p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#languagesAnchor">
+                                <img src="LanguagesLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Languages
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#educationAnchor">
+                                <img src="GraduateLogo.png" class="card-img-top" alt="CVLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Education</p>
+
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="research.html">
+                                <img src="ResearchMagnifyStatistics.png" class="card-img-top"
+                                    alt="ResearchMagnifyStatistics">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Research</p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en">
+                                <img src="PaperLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Publications
+                                </p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#workExperienceAnchor">
+                                <img src="WorkLogo.png" class="card-img-top" alt="DiplomaLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Work</p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#toolsAnchor">
+                                <img src="ToolsLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Skills & Tools
+                                </p>
+                            </a>
+                        </div>
+                        <div class="card" style="width: 150px; border: 7px solid rgb(113, 196, 252);">
+                            <a href="#languagesAnchor">
+                                <img src="LanguagesLogo.png" class="card-img-top" alt="ContactLogo">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: black; float:center; text-align: center;">
+                                    Languages
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-12"></div>
+                    <button type="button" class="btn btn-outline-light btn-lg"
+                        onclick="window.open('BillyTsouvalasCVWeb.pdf')"><i class="fa fa-download"></i> Download
+                        CV</button>
+                </div>
+            </div>
+    </div>
+    </div>
+    </section>
+    </div>
+    </div>
+
+    <hr id="educationAnchor">
+
+    <section id="info1" style="padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="showcase-left">
+                        <!--<h1 style="font-family: Ubuntu; color: black;">Education</h1>-->
+                        <img src="GraduateLogo.png" width="50%" height="50%" style="border-radius:50%;">
+                        <!--<img src="DiplomaLogo.png" width="30%" height="30%">-->
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="showcase-right">
+                        <h2 style="font-family: Ubuntu; color: black;">Virginia Commonwealth University</h2>
+                        <p style="font-size:20px;">PhD Student in Computer Science
+                            <br>
+                            Research Assistant at <a href="https://rampages.us/mhrg/">Modern
+                                Heuristics Research
+                                Group</a>, VCU</style=>
+                        <p>2021-Present</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <br>
+
+    <section id="info1" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-left">
+                        <h2 style="font-family: Ubuntu; color: black;">University of Patras, Greece</h2>
+                        <p style="font-size:20px;">BSc, MSc in Electrical and Computer
+                            Engineering
+                            <br>
+                            Master's Thesis: <a
+                                href="https://nemertes.library.upatras.gr/jspui/bitstream/10889/14031/1/TsouvalasMalwareClassificationMethodologiesOct2020.pdf">Graph-based
+                                Malware Detection</a>
+                        </p>
+                        <p>2015-2020</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-right">
+                        <div class="showcase-right">
+                            <a
+                                href="https://nemertes.library.upatras.gr/jspui/bitstream/10889/14031/1/TsouvalasMalwareClassificationMethodologiesOct2020.pdf">
+                                <img src="Thesis.png" id="ThesisImg" onclick="enlargeImg()"
+                                    style="width:80%; text-align: center;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-right">
+                        <div class="showcase-right">
+                            <h2 style="font-family: Ubuntu; color: black;">Swiss Federal Institute of Technology
+                                (EPFL)
+                            </h2>
+                            <p style="font-size:20px;">4-year studies in Electrical and Electronic Engineering
+                                (Bachelor
+                                level)</p>
+                            <p>2010-2014</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <hr id="workExperienceAnchor">
+
+    <section id="info1" style="padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 align-self-center">
+                    <div class="showcase-right">
+                        <img src="WorkLogo.png" width="60%" height="60%">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    <div class="showcase-left">
+                        <h2 style="font-family: Ubuntu; color: black;">Research Assistant at <a
+                                href="https://rampages.us/mhrg/about/">VCU Modern Heuristics
+                                Research Group</a> <br>(2021-Present)</h2>
+                        <ul style="font-size:20px;">
+                            <li> Cyber-Physical Intrusion Detection System for Solar Energy Power Plants</li>
+                            <li> Cyber Attack Detection and Analysis for Wind Energy Power Plants</li>
+                            <li> Development of Deepfake and Computer Generated Images and Videos Detection Tool</li>
+                            <li> Infrared Image Classification via Transfer Learning</li>
+                            <li> Virtual Reality Environment for Medical Operations & Surgeon Training</li>
+                            <li> Social Media Administrator for VCU Cybersecurity Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+    <br>
+    <section id="info1" style=" padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-left">
+                        <h2 style="font-family: Ubuntu; color: black;">Website Development, Maintenace, Digital
+                            Presence, and Web Security Consultant for <a href="https://drdimitriou.com">Dr. Dimitriou,
+                                Mental Health
+                                Consultant</a><br> (2018-2020)</h2>
+                        <ul style="font-size:20px;">
+                            <li> Web Design & Development</li>
+                            <li> Secure and Usable Web Applications (GDPR, Secure transactions)</li>
+                            <li> Social Media and Digital Marketing (Digital Advertising on Facebook and Linkedin)</>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-right">
+                        <h2 style="font-family: Ubuntu; color: black;">Intern at University of Patras Research Center
+                            (2020)</h2>
+                        <ul style="font-size:20px;">
+                            <li> Dynamic Analysis Malware Detection Platform</li>
+                            <li> Malware Detection Tool Development</li>
+                            <li> Work on Master's Thesis (Graph-based Malware Detection Methodologies)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr id="toolsAnchor">
+
+    <section id="info1" style="padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 align-self-center">
+                    <div class="showcase-right">
+                        <img src="ToolsLogo.png" width="60%" height="60%">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="showcase-left">
+                        <h2 style="font-family: Ubuntu; color: black;">Malware</h2>
+                        <ul style="font-size:20px;">
+                            <li> Reverse Engineering: Hex Rays IDA Pro, NSA Ghidra, Radare</li>
+                            <li> Datasets: VirusShare, VirusTotal, Ember, Sophos, Stratosphere IPS</li>
+                            <li> Signature-based & Anomaly-based Detection</li>
+                            <li> Entropy, Cyclomatic Complexity Analysis</li>
+                            <li> API Calls based Analysis, Detection & Classification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+    <br>
+    <section id="info1" style=" padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-left">
+                        <h2 style="font-family: Ubuntu; color: black;">Network Security</h2>
+                        <ul style="font-size:20px;">
+                            <li> Next Generation Firewalls</li>
+                            <li> Cyper-Physical Systems Security</li>
+                            <li>Deep Neural Network based IDS/IPS </li>
+                            <li>Wireshark and NMAP</li>
+                            <li>Zeek (Bro)</li>
+                            <li>Suricata</li>
+                            <li>Snort</li>
+                            <li>Stratosphere</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-right">
+                        <h2 style="font-family: Ubuntu; color: black;">Machine Learning & Deep Neural Networks</h2>
+                        <ul style="font-size:20px;">
+                            <li> Tensorflow</li>
+                            <li> Pytorch</li>
+                            <li> ML: Random Forest, SVM & One Class SVM, Kernelization, Local Outlier Factor, Novelty
+                                Detection</li>
+                            <li> DNN: Autoencoders, Convolutional, Recurrent, Generative Adversarial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info1" style=" padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-left">
+                        <h2 style="font-family: Ubuntu; color: black;">Penetration Testing & Digital Forensics</h2>
+                        <br>
+                        <ul style="font-size:20px;">
+                            <li> Burp Suite</li>
+                            <li> Metasploit</li>
+                            <li> Hashcat</li>
+                            <li> Aircrack-ng</li>
+                            <li> Cyper-Physical Systems Security</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-right">
+                        <h2 style="font-family: Ubuntu; color: black;">Programming & Scripting</h2>
+                        <ul style="font-size:20px;">
+                            <li> Python</li>
+                            <li> Java</li>
+                            <li> C, C++, C#</li>
+                            <li> Javascript</li>
+                            <li> DSP Assembly</li>
+                            <li> Git</li>
+                            <li> MatLab</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr id="languagesAnchor">
+
+    <section id="info1" style="padding-top: 50px; padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 align-self-center">
+                    <div class="showcase-left">
+                        <img src="LanguagesLogo.png" width="70%" height="70%">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="showcase-right">
+                        <h2 style="font-family: Ubuntu; color: black;">Languages Spoken</h2>
+                        <br>
+                        <ul style="font-size:20px;">
+                            <li> English</li>
+                            <li> French</li>
+                            <li> Greek</li>
+                            <li> German</li>
+                        </ul>
+                        <br>
+                        <p style="font-family: Ubuntu; font-size: 15px;">
+                            English: ETS TOEFL Nov. 2020, Score: 115/120 <br>
+                            French: DALF C1 CERF</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<hr id="softSkillsAnchor">-->
+
+    <div class="footer">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <ul style="list-style-type:none;">
+                    <p style="text-decoration: underline">Sitemap</p>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!--<button class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" type="button" onclick="return NavOnOff();">Hide</button>-->
+                </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <ul style="list-style-type:none;">
+                    <p style="text-decoration: underline">Contact</p>
+                    <li>Billy Tsouvalas,<br>
+                        VCU, Richmond, VA<br>
+                        tsouvalasv [at] vcu.edu<br>
+                        Tel.: (804)-980-1233<br></li>
+                </ul>
+                <div class="align-items-center row justify-content-around" style=" text-align: center;">
+                    <div class="card" style="background: none; border: none;">
+                        <br>
+                        <br>
+                        <a href="https://www.linkedin.com/in/billy-tsouvalas-354997147/"><i
+                                class="fa fa-linkedin-square" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                    </div>
+                    <div class="card" style="background: none; border: none;">
+                        <br>
+                        <br>
+                        <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en"><i
+                                class="fa fa-graduation-cap" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                    </div>
+                    <!--
+                                        <div class="card" style="background: none; border: none;">
+                                            <br>
+                                            <br>
+                                            <a href="https://www.facebook.com/billy.tsouvalas/"><i class="fa fa-facebook mr-1"
+                                                    style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                        </div>
+                                        <div class="card" style="background: none; border: none;">
+                                            <br>
+                                            <br>
+                                            <a href="https://www.linkedin.com/in/billy-tsouvalas-354997147/"><i
+                                                    class="fa fa-linkedin-square" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                        </div>
+                                        <div class="card" style="background: none; border: none;">
+                                            <br>
+                                            <br>
+                                            <a href="https://twitter.com/btsouvalas?lang=en"><i class="fa fa-twitter"
+                                                    style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                        </div>
+                                        <div class="card" style="background: none; border: none;">
+                                            <br>
+                                            <br>
+                                            <a href=""><i class="fa fa-github" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                        </div>
+                                        <div class="card" style="background: none; border: none;">
+                                            <br>
+                                            <br>
+                                            <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en"><i
+                                                    class="fa fa-graduation-cap" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                        </div>
+                                    -->
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <ul style="list-style-type:none;">
+                    <br>
+                    <br>
+                    <br>
+                    <li><a href="#top">Back to top of page</a></li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="footer__copyright">
+                        Billy Tsouvalas &copy; 2021
+                    </div>
+                    <!--<button class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" type="button" onclick="return NavOnOff();">Hide</button>-->
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.showcase-left', {
+            duration: 2000,
+            origin: 'top',
+            distance: '15px'
+        });
+        sr.reveal('.showcase-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '15px'
+        });
+        sr.reveal('.showcase-bottom', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '15px'
+        });
+        sr.reveal('.showcase-btn', {
+            duration: 2000,
+            delay: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal('#testimonial div', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal('.info-left', {
+            duration: 2000,
+            origin: 'left',
+            distance: '15px',
+            viewFactor: 0.2
+        });
+        sr.reveal('.info-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '15px',
+            viewFactor: 0.2
+        });
+    </script>
+
+    <script>
+        $(function () {
+            // Smooth Scrolling
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

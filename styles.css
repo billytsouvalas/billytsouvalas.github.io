@@ -1,0 +1,364 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.navbar-collapse.collapse.in {
+  display: block !important;
+}
+
+.navbar {
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 255, 255),
+    rgba(205, 227, 255, 0.781)
+  );
+}
+
+.text {
+  background-color: rgb(224, 224, 224);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 7px solid rgb(113, 196, 252);
+  /*border: 7px solid rgba(226, 11, 11, 0.932);*/
+  background-color: white;
+}
+.img1 {
+  /*
+  background-image: linear-gradient(
+    to right,
+    rgb(219, 219, 219),
+    rgba(124, 124, 124, 0)
+  );*/
+  background-image: url("atanas-teodosiev-EzoGykQmUYI-unsplash.jpg");
+  /*background-image: url("joe-woods-4Zaq5xY5M_c-unsplash.jpg");*/
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .img1 {
+    background-attachment: inherit;
+  }
+}
+
+.img2 {
+  /*
+  background-image: linear-gradient(
+    to right,
+    rgba(124, 124, 124, 0),
+    rgb(219, 219, 219)
+  );
+  */
+  background-image: url("josh-rose-trYl7JYATH0-unsplash.jpg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .img2 {
+    background-attachment: inherit;
+  }
+}
+
+.img3 {
+  /*
+  background-image: linear-gradient(
+    to right,
+    rgb(219, 219, 219),
+    rgba(124, 124, 124, 0)
+  );
+  */
+  background-image: url("david-werbrouck-RfXv1snaYEI-unsplash.jpg");
+  padding-top: 50px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .img3 {
+    background-attachment: inherit;
+  }
+}
+
+.img4 {
+  background-image: linear-gradient(
+    to right,
+    rgba(124, 124, 124, 0),
+    rgb(189, 189, 189)
+  );
+  /*background-image: url("anna-pelzer-QcUJLRMDryQ-unsplash.jpg");*/
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+.text {
+  background-color: rgb(250, 248, 248);
+  font-size: 37px;
+  font-family: Ubuntu;
+  border-width: 5px;
+  border: 0;
+  box-shadow: inset 0px 15px 10px -10px #8c8c8c;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #060922;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  -webkit-animation: loader 2s infinite ease;
+  animation: loader 2s infinite ease;
+  z-index: 5;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  -webkit-animation: loader-inner 2s infinite ease-in;
+  animation: loader-inner 2s infinite ease-in;
+  z-index: 5;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  border-radius: 25px;
+  border: 3px solid rgb(255, 68, 68);
+  width: 100%;
+  height: 125px;
+  margin: 50px auto;
+  padding-top: 10px;
+  padding-right: 50px;
+  background: rgb(224, 224, 224);
+  color: rgb(31, 31, 31);
+  font-size: 2em;
+  font-family: Ubuntu;
+  text-align: center;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-top: 10px;
+  border-style: inset;
+  border-width: 1px;
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.block {
+  width: 100px;
+}
+
+.card {
+  display: inline-block;
+}
+
+.collapsible {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  border-color: black;
+  outline: none;
+}
+
+.active,
+.collapsible:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.content {
+  padding: 20px 20px;
+  display: none;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(227, 239, 255, 0.781)
+  );
+  border-radius: 10px;
+  border: 2px;
+  border-color: black;
+}
+
+.certLink {
+  color: black;
+}
+
+.certLink:hover {
+  color: #75acff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #75acff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#imgLink:hover {
+  color: #75acff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(113, 196, 252);
+}
+
+/* ------------ Footer -------------------*/
+.footer {
+  background-color: #060922de;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
