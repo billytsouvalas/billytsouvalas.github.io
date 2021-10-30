@@ -123,6 +123,53 @@ html {
   color: black;
 }
 
+.img5 {
+  /*
+  background-image: linear-gradient(
+    to right,
+    rgb(219, 219, 219),
+    rgba(124, 124, 124, 0)
+  );
+  */
+  background-image: url("jared-arango-1-mh6U3qeGQ-unsplash.jpg");
+  padding-top: 50px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .img6 {
+    background-attachment: inherit;
+  }
+}
+
+.img6 {
+  /*
+  background-image: linear-gradient(
+    to right,
+    rgb(219, 219, 219),
+    rgba(124, 124, 124, 0)
+  );
+  */
+  background-image: url("boris-stefanik-wxJscL5ZzDA-unsplash.jpg");
+  padding-top: 50px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .img5 {
+    background-attachment: inherit;
+  }
+}
+
 .text {
   background-color: rgb(250, 248, 248);
   font-size: 37px;
@@ -285,6 +332,19 @@ hr {
   box-shadow: 0 10px 10px -10px #8c8c8c inset;
 }
 
+.certHr {
+  background-color: black;
+  display: block;
+  margin-top: 0.1em;
+  margin-bottom: 0em;
+  padding-top: 0px;
+  border-style: inset;
+  border-width: 1px;
+  height: 0px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
 .row {
   width: 100%;
   margin: 0 auto;
@@ -328,7 +388,7 @@ hr {
 }
 
 .certLink {
-  color: black;
+  color: white;
 }
 
 .certLink:hover {
