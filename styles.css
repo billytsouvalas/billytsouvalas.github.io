@@ -20,6 +20,10 @@ html {
   );
 }
 
+a:hover {
+  background-size: 4px 50px;
+}
+
 .text {
   background-color: rgb(224, 224, 224);
   font-family: Arial, Helvetica, sans-serif;
@@ -231,6 +235,29 @@ html {
   );
   */
   background-image: url("giammarco-xLhKkk2tKkA-unsplash.jpg");
+  padding-top: 50px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .img10 {
+    background-attachment: inherit;
+  }
+}
+
+.img10 {
+  /*
+  background-image: linear-gradient(
+    to right,
+    rgb(219, 219, 219),
+    rgba(124, 124, 124, 0)
+  );
+  */
+  background-image: url("adam-birkett-_IrFSypwykg-unsplash.jpg");
   padding-top: 50px;
   width: 100%;
   background-attachment: fixed;
@@ -472,18 +499,88 @@ a:hover {
   cursor: pointer;
 }
 
+/*
+#imgLink {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+*/
 #imgLink:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
   color: #75acff;
   text-decoration: none;
   cursor: pointer;
   opacity: 0.8;
 }
 
+#thmBadge:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  color: #75acff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1.35);
+  animation: bright-animation 2s infinite;
+}
+
+#thmBadge {
+  border-radius: 10%;
+  opacity: 0.8;
+  /*animation: bright-animation 3s infinite;
+  animation: pulse-animation 3s infinite;
+  
+  &:hover {
+    animation-play-state: paused;
+  }
+  */
+}
+
+@keyframes bright-animation {
+  0% {
+    filter: brightness(0.7);
+  }
+  50% {
+    filter: brightness(1.7);
+  }
+  100% {
+    filter: brightness(0.7);
+  }
+}
+
+.badgeCard {
+  display: inline-block;
+}
+
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: rgb(113, 196, 252);
 }
+/*-------- THM Hover tooltips --------------*/
 
+/* -------- Badge Hover --------------------*/
+
+/*#box-wrap{
+  align-items: center;
+  justify-content: center;
+}
+
+#box-wrap:hover #thmBadge {
+  filter: blur(3px);
+  opacity: 0.8;
+  transform: scale(1);
+  box-shadow: none;
+  z-index: 100;
+}
+#box-wrap:hover #thmBadge:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  transform: scale(1.5);
+}
+*/
 /* ------------ Footer -------------------*/
 .footer {
   background-color: #060922de;
