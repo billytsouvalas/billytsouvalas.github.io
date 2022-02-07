@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -21,18 +23,18 @@
 
 
 
+
 <body>
-    <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-md-center"
+    <nav class="navbar navbar-light fixed-top navbar-expand-md bg-faded justify-content-center"
         style="background-color: #ffffff;">
-        <a class=" navbar-brand" href="index.html">
-            <img src="TsouvalasCircleCropped.png" width="40" height="40" alt="">
+        <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="TsouvalasCircleCropped.png" width="40"
+                height="40" alt="">
         </a>
-        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-            <ul class="navbar-nav mx-auto text-md-center text-right">
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="navbar-nav w-100 justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html"><i class="fa fa-home mr-1"></i></a>
                 </li>
@@ -42,6 +44,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="certifications.html">Certifications</a>
                 </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="research.html">Research</a>
+                </li>
+
                 <li class="nav-item my-auto">
                     <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="index.html"
                         style="color: #383838">Billy
@@ -49,35 +55,72 @@
                 </li>
 
                 <li class=" nav-item">
-                    <a class="nav-link" href="research.html">Research</a>
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav flex-row justify-content-md-start justify-content-sm-between flex-nowrap">
-                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/"
-                        target=“_blank”><i class="fa fa-linkedin-square"></i></a> </li>
-                <li class="nav-item"><a class="nav-link"
-                        href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en" target=“_blank”><i
-                            class="fa fa-graduation-cap"></i></a> </li>
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <!-- Linkedin -->
                 <li class="nav-item">
-                    <div itemscope itemtype="https://schema.org/Person"><a class="nav-link"
-                            href="https://orcid.org/0000-0002-8441-6489" target=“_blank” target="orcid.widget"
-                            rel="me noopener noreferrer"><img
-                                src=" https://orcid.org/sites/default/files/images/orcid_16x16.png"
-                                style="padding-bottom: 3.7px;" alt="ORCID iD icon"></a></div>
+                    <a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target=“_blank”>
+                        <i class="fa fa-linkedin-square fa-2x"></i>
+                    </a>
                 </li>
-                <!--
-                            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/billy.tsouvalas/"><i
-                                        class="fa fa-facebook mr-1"></i></a> </li>
-                            
-                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/btsouvalas?lang=en"><i
-                                        class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-github"></i></a> </li>
-                            
-                                    -->
+                <!-- Google Scholar -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://scholar.google.com/citations?user=9vFc1WAAAAAJ&hl=en"
+                        target=“_blank”>
+                        <i class="ai ai-google-scholar-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Research Gate -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.researchgate.net/profile/Billy-Tsouvalas" target=“_blank”>
+                        <i class="ai ai-researchgate-square ai-2x"></i></a>
+                </li>
+                <!-- Orcid -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                        <i class="ai ai-orcid-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Semantic Scholar -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.semanticscholar.org/author/2142635538" target=“_blank”>
+                        <i class="ai ai-semantic-scholar-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Publons -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://publons.com/researcher/4280464/billy-tsouvalas/" target=“_blank”>
+                        <i class="ai ai-publons-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Acclaim -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.credly.com/users/vasileios-tsouvalas/badges" target=“_blank”>
+                        <i class="ai ai-acclaim-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Coursera -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.coursera.org/user/7b4b955af7730d2d8bf0baf7fbc8381b"
+                        target=“_blank”>
+                        <i class="ai ai-coursera-square ai-2x"></i>
+                    </a>
+                </li>
+
+                <!-- Piazza 
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                            <i class="ai ai-piazza-square ai-2x"></i>
+                        </a>
+                    </li>-->
             </ul>
         </div>
     </nav>
@@ -1164,6 +1207,8 @@
                     <li><a href="cv.html">CV</a></li>
                     <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <!--<button class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" type="button" onclick="return NavOnOff();">Hide</button>-->
                 </ul>
@@ -1173,67 +1218,79 @@
                 <ul style="list-style-type:none;">
                     <p style="text-decoration: underline">Contact</p>
                     <li>Billy Tsouvalas,<br>
-                        VCU, Richmond, VA<br>
-                        tsouvalasv [at] vcu.edu<br>
+                        SBU, Stony Brook, NY<br>
+                        vtsouvalas [at] cs.stonybrook.edu<br>
                         Tel.: (804)-980-1233<br></li>
                 </ul>
                 <div class="align-items-center row justify-content-around" style=" text-align: center;">
-                    <div class="card" style="background: none; border: none;">
-                        <br>
-                        <br>
-                        <a href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target=“_blank”><i
-                                class="fa fa-linkedin-square" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
-                    </div>
-                    <div class="card" style="background: none; border: none;">
-                        <br>
-                        <br>
-                        <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en" target=“_blank”><i
-                                class="fa fa-graduation-cap" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
-                    </div>
-                    <div class="card" style="background: none; border: none;">
-                        <br>
-                        <br>
-                        <div itemscope itemtype="https://schema.org/Person">
-                            <a itemprop="sameAs" content="https://orcid.org/0000-0002-8441-6489"
-                                href="https://orcid.org/0000-0002-8441-6489" target="orcid.widget" target=“_blank”
-                                rel="me noopener noreferrer" style="vertical-align:top;">
-                                <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-                                    style="width:1em;margin-right:.5em; margin-bottom: .5em;"
-                                    alt="ORCID iD icon">0000-0002-8441-6489
-                            </a>
-                        </div>
-                    </div>
+                    <!-- Linkedin -->
+                    <a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target=“_blank”>
+                        <i class="fa fa-linkedin-square fa-2x"></i>
+                    </a>
+                    <!-- Google Scholar -->
+                    <a class="nav-link" href="https://scholar.google.com/citations?user=9vFc1WAAAAAJ&hl=en"
+                        target=“_blank”>
+                        <i class="ai ai-google-scholar-square ai-2x"></i>
+                    </a>
+                    <!-- Research Gate -->
+                    <a class="nav-link" href="https://www.researchgate.net/profile/Billy-Tsouvalas" target=“_blank”>
+                        <i class="ai ai-researchgate-square ai-2x"></i></a>
+                    <!-- Orcid -->
+                    <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                        <i class="ai ai-orcid-square ai-2x"></i>
+                    </a>
+                    <!-- Semantic Scholar -->
+                    <a class="nav-link" href="https://www.semanticscholar.org/author/2142635538" target=“_blank”>
+                        <i class="ai ai-semantic-scholar-square ai-2x"></i>
+                    </a>
+                    <!-- Publons -->
+                    <a class="nav-link" href="https://publons.com/researcher/4280464/billy-tsouvalas/" target=“_blank”>
+                        <i class="ai ai-publons-square ai-2x"></i>
+                    </a>
+                    <!-- Acclaim -->
+                    <a class="nav-link" href="https://www.credly.com/users/vasileios-tsouvalas/badges" target=“_blank”>
+                        <i class="ai ai-acclaim-square ai-2x"></i>
+                    </a>
+                    <!-- Coursera -->
+                    <a class="nav-link" href="https://www.coursera.org/user/7b4b955af7730d2d8bf0baf7fbc8381b"
+                        target=“_blank”>
+                        <i class="ai ai-coursera-square ai-2x"></i>
+                    </a>
+                    <!-- Piazza 
+                            <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                                <i class="ai ai-piazza-square ai-2x"></i>
+                            </a>-->
                     <!--
-                                        <div class="card" style="background: none; border: none;">
-                                            <br>
-                                            <br>
-                                            <a href="https://www.facebook.com/billy.tsouvalas/"><i class="fa fa-facebook mr-1"
-                                                    style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
-                                        </div>
-                                        <div class="card" style="background: none; border: none;">
-                                            <br>
-                                            <br>
-                                            <a href="https://www.linkedin.com/in/billy-tsouvalas-354997147/"><i
-                                                    class="fa fa-linkedin-square" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
-                                        </div>
-                                        <div class="card" style="background: none; border: none;">
-                                            <br>
-                                            <br>
-                                            <a href="https://twitter.com/btsouvalas?lang=en"><i class="fa fa-twitter"
-                                                    style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
-                                        </div>
-                                        <div class="card" style="background: none; border: none;">
-                                            <br>
-                                            <br>
-                                            <a href=""><i class="fa fa-github" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
-                                        </div>
-                                        <div class="card" style="background: none; border: none;">
-                                            <br>
-                                            <br>
-                                            <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en"><i
-                                                    class="fa fa-graduation-cap" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
-                                        </div>
-                                    -->
+                                                <div class="card" style="background: none; border: none;">
+                                                    <br>
+                                                    <br>
+                                                    <a href="https://www.facebook.com/billy.tsouvalas/"><i class="fa fa-facebook mr-1"
+                                                            style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                                </div>
+                                                <div class="card" style="background: none; border: none;">
+                                                    <br>
+                                                    <br>
+                                                    <a href="https://www.linkedin.com/in/billy-tsouvalas-354997147/"><i
+                                                            class="fa fa-linkedin-square" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                                </div>
+                                                <div class="card" style="background: none; border: none;">
+                                                    <br>
+                                                    <br>
+                                                    <a href="https://twitter.com/btsouvalas?lang=en"><i class="fa fa-twitter"
+                                                            style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                                </div>
+                                                <div class="card" style="background: none; border: none;">
+                                                    <br>
+                                                    <br>
+                                                    <a href=""><i class="fa fa-github" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                                </div>
+                                                <div class="card" style="background: none; border: none;">
+                                                    <br>
+                                                    <br>
+                                                    <a href="https://scholar.google.com/citations?user=S4OBezsAAAAJ&hl=en"><i
+                                                            class="fa fa-graduation-cap" style="font-size:20px; color:rgb(38, 168, 255);"></i></a>
+                                                </div>
+                                            -->
                 </div>
             </div>
 
@@ -1248,7 +1305,7 @@
                     <br>
                     <br>
                     <div class="footer__copyright">
-                        Billy Tsouvalas &copy; 2021
+                        Billy Tsouvalas &copy; 2022
                     </div>
                     <!--<button class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" type="button" onclick="return NavOnOff();">Hide</button>-->
                 </ul>
