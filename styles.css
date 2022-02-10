@@ -12,6 +12,16 @@ html {
   display: block !important;
 }
 
+ul.nav.navbar-nav.ml-auto.w-100.justify-content-end {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
 .navbar {
   background-image: linear-gradient(
     to left,
