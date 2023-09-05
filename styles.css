@@ -686,6 +686,20 @@ a:hover {
   }
 }
 
+/*-------- "Billy Tsouvalas" remove in smaller than 1500px, which is the navbar collapse limit (see above)----*/
+
+@media (min-width: 1500px){
+  .d-custom-block {
+    display: block;
+  }
+}
+@media (max-width: 1500px){
+  .d-custom-block {
+    display: none;
+  }
+
+}
+
 /*-------- THM Hover tooltips --------------*/
 
 /* -------- Badge Hover --------------------*/
