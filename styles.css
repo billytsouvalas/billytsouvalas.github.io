@@ -192,15 +192,17 @@ a:hover {
     rgba(124, 124, 124, 0),
     rgb(189, 189, 189)
   );
-  /*background-image: url("anna-pelzer-QcUJLRMDryQ-unsplash.jpg");*/
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* background-image: url("anna-pelzer-QcUJLRMDryQ-unsplash.jpg"); */
+  padding-top: 200px;
+  padding-bottom: 200px;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: black;
+  text-align: center;
+  /* z-index: -1; */
+  /* color: black; */
 }
 
 @media screen and (max-width: 768px) {
