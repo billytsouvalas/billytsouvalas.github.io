@@ -55,7 +55,7 @@ a.nav-link {
 }
 
 .footer a,
-.contact > a {
+.contact > li > a {
   text-decoration: none;
   position: relative;
   overflow: hidden;
