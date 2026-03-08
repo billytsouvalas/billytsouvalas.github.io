@@ -154,6 +154,11 @@ a.nav-link:focus {
   color: var(--accent);
 }
 
+.navbar a.nav-link.active {
+  color: #fff !important;
+  text-shadow: 0 0 10px rgba(0, 212, 170, 0.6), 0 0 20px rgba(0, 212, 170, 0.3);
+}
+
 a.nav-link::after {
   content: '';
   position: absolute;
@@ -165,7 +170,8 @@ a.nav-link::after {
   transition: width var(--transition-base), left var(--transition-base);
 }
 
-a.nav-link:hover::after {
+a.nav-link:hover::after,
+a.nav-link.active::after {
   width: 80%;
   left: 10%;
 }
@@ -670,6 +676,13 @@ hr {
   justify-content: center;
   align-items: center;
   z-index: 5;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.loader-wrapper.loaded {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .loader {
@@ -716,7 +729,7 @@ hr {
   text-align: center;
   width: 100%;
   border-top: 1px solid var(--border);
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .footer a {
@@ -728,30 +741,48 @@ hr {
   color: var(--accent-hover);
 }
 
-.footer p[style*="underline"],
-.footer-heading {
-  color: var(--text-bright);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
+.footer-slim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.footer-sep {
+  margin: 0 0.4rem;
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.15rem;
+}
+
+.footer-socials a {
+  color: var(--text-secondary);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.footer-socials a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .footer__copyright {
   color: var(--text-secondary);
-  font-size: 0.85rem;
-  margin-top: 2rem;
-}
-
-.footer .nav-link .fa,
-.footer .nav-link .ai {
-  color: var(--text-secondary);
-}
-
-.footer .nav-link:hover .fa,
-.footer .nav-link:hover .ai {
-  color: var(--accent);
-  transform: translateY(-2px);
+  font-size: 0.8rem;
+  opacity: 0.7;
 }
 
 /* ==========================================================================
@@ -827,8 +858,9 @@ hr {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(0, 121, 190, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 50%, rgba(0, 212, 170, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 121, 190, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(0, 212, 170, 0.06) 0%, transparent 40%),
     var(--bg-primary);
   z-index: 0;
 }
