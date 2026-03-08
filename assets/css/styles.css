@@ -2,7 +2,6 @@ body,
 html {
   height: 100%;
   width: 100%;
-  zoom: 90%;
 }
 
 html {
@@ -120,8 +119,8 @@ a:hover {
     rgb(219, 219, 219),
     rgba(124, 124, 124, 0)
   );*/
-  background-image: url("atanas-teodosiev-EzoGykQmUYI-unsplash.jpg");
-  /*background-image: url("joe-woods-4Zaq5xY5M_c-unsplash.jpg");*/
+  background-image: url("../images/bg/atanas-teodosiev-EzoGykQmUYI-unsplash.jpg");
+  /*background-image: url("../images/bg/joe-woods-4Zaq5xY5M_c-unsplash.jpg");*/
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
@@ -145,7 +144,7 @@ a:hover {
     rgb(219, 219, 219)
   );
   */
-  background-image: url("josh-rose-trYl7JYATH0-unsplash.jpg");
+  background-image: url("../images/bg/josh-rose-trYl7JYATH0-unsplash.jpg");
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
@@ -170,7 +169,7 @@ a:hover {
     rgba(124, 124, 124, 0)
   );
   */
-  background-image: url("david-werbrouck-RfXv1snaYEI-unsplash.jpg");
+  background-image: url("../images/bg/david-werbrouck-RfXv1snaYEI-unsplash.jpg");
   padding-top: 50px;
   width: 100%;
   background-attachment: fixed;
@@ -192,7 +191,7 @@ a:hover {
     rgba(124, 124, 124, 0),
     rgb(189, 189, 189)
   );
-  /* background-image: url("anna-pelzer-QcUJLRMDryQ-unsplash.jpg"); */
+  /* background-image: url("../images/bg/anna-pelzer-QcUJLRMDryQ-unsplash.jpg"); */
   padding-top: 200px;
   padding-bottom: 200px;
   width: 100%;
@@ -206,7 +205,7 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .img5 {
+  .img4 {
     background-attachment: inherit;
   }
 }
@@ -219,7 +218,7 @@ a:hover {
     rgba(124, 124, 124, 0)
   );
   */
-  background-image: url("jared-arango-1-mh6U3qeGQ-unsplash.jpg");
+  background-image: url("../images/bg/jared-arango-1-mh6U3qeGQ-unsplash.jpg");
   padding-top: 50px;
   width: 100%;
   background-attachment: fixed;
@@ -230,7 +229,7 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .img6 {
+  .img5 {
     background-attachment: inherit;
   }
 }
@@ -243,7 +242,30 @@ a:hover {
     rgba(124, 124, 124, 0)
   );
   */
-  background-image: url("boris-stefanik-wxJscL5ZzDA-unsplash.jpg");
+  background-image: url("../images/bg/boris-stefanik-wxJscL5ZzDA-unsplash.jpg");
+  padding-top: 50px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .img6 {
+    background-attachment: inherit;
+  }
+}
+
+.img7 {
+  /*
+  background-image: linear-gradient(
+    to right,
+    rgb(219, 219, 219),
+    rgba(124, 124, 124, 0)
+  );
+  */
+  background-image: url("../images/bg/adolfo-felix-4JL_VAgxwcU-unsplash.jpg");
   padding-top: 50px;
   width: 100%;
   background-attachment: fixed;
@@ -258,7 +280,7 @@ a:hover {
   }
 }
 
-.img7 {
+.img8 {
   /*
   background-image: linear-gradient(
     to right,
@@ -266,7 +288,7 @@ a:hover {
     rgba(124, 124, 124, 0)
   );
   */
-  background-image: url("adolfo-felix-4JL_VAgxwcU-unsplash.jpg");
+  background-image: url("../images/bg/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
   padding-top: 50px;
   width: 100%;
   background-attachment: fixed;
@@ -281,7 +303,7 @@ a:hover {
   }
 }
 
-.img8 {
+.img9 {
   /*
   background-image: linear-gradient(
     to right,
@@ -289,7 +311,7 @@ a:hover {
     rgba(124, 124, 124, 0)
   );
   */
-  background-image: url("ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+  background-image: url("../images/bg/giammarco-xLhKkk2tKkA-unsplash.jpg");
   padding-top: 50px;
   width: 100%;
   background-attachment: fixed;
@@ -304,29 +326,6 @@ a:hover {
   }
 }
 
-.img9 {
-  /*
-  background-image: linear-gradient(
-    to right,
-    rgb(219, 219, 219),
-    rgba(124, 124, 124, 0)
-  );
-  */
-  background-image: url("giammarco-xLhKkk2tKkA-unsplash.jpg");
-  padding-top: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 768px) {
-  .img10 {
-    background-attachment: inherit;
-  }
-}
-
 .img10 {
   /*
   background-image: linear-gradient(
@@ -335,7 +334,7 @@ a:hover {
     rgba(124, 124, 124, 0)
   );
   */
-  background-image: url("adam-birkett-_IrFSypwykg-unsplash.jpg");
+  background-image: url("../images/bg/adam-birkett-_IrFSypwykg-unsplash.jpg");
   padding-top: 50px;
   width: 100%;
   background-attachment: fixed;
@@ -352,7 +351,7 @@ a:hover {
     rgb(219, 219, 219)
   );
   */
-  background-image: url("joshua-rivera-usmhPmT5sj0-unsplash.jpg");
+  background-image: url("../images/bg/joshua-rivera-usmhPmT5sj0-unsplash.jpg");
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
