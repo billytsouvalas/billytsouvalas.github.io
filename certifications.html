@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/multiple.js/0.0.1/multiple.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="TsouvalasCircleCropped.png">
+</head>
+
+
+
+
+<body>
+    <!--
+        Previously:
+            <nav class="navbar navbar-light fixed-top navbar-expand-xl bg-faded justify-content-center"
+    -->
+    <nav class="navbar navbar-light fixed-top navbar-expand-custom bg-faded justify-content-center"
+        style="background-color: #ffffff;">
+        <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="TsouvalasCircleCropped.png" width="40"
+                height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="navbar-nav w-100 justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home mr-1"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certifications.html">Certifications</a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="research.html">Research</a>
+                </li>
+
+                <!--
+                Old version, with Billy Tsouvalas appearing everywhere
+                <li class="nav-item my-auto">
+                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="index.html" style="color: #383838">Billy
+                        Tsouvalas</a>
+                
+                Newer version, with Billy Tsouvalas only appearing between 1500px and the xl from d-xl-block
+                <li class="nav-item my-auto">
+                    <a class="nav-link navbar-brand mx-0 d-none d-xl-block" href="index.html" style="color: #383838">Billy
+                        Tsouvalas</a>  
+                </li>
+                -->
+                <li class="nav-item my-auto">
+                    <a class="nav-link navbar-brand mx-0 d-custom-block" href="index.html" style="color: #383838">Billy
+                        Tsouvalas</a>
+                </li>
+
+                <li class=" nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <!-- Linkedin -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target=“_blank”>
+                        <i class="fa fa-linkedin-square fa-2x"></i>
+                    </a>
+                </li>
+                <!-- Twitter -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/BTsouvalas" target=“_blank”>
+                        <i class="fa fa-twitter-square fa-2x"></i>
+                    </a>
+                </li>
+                <!-- Google Scholar -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://scholar.google.com/citations?user=9vFc1WAAAAAJ&hl=en"
+                        target=“_blank”>
+                        <i class="ai ai-google-scholar-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Research Gate -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.researchgate.net/profile/Billy-Tsouvalas" target=“_blank”>
+                        <i class="ai ai-researchgate-square ai-2x"></i></a>
+                </li>
+                <!-- Orcid -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                        <i class="ai ai-orcid-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Github -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/BillyPragSec" target=“_blank”>
+                        <i class="fa fa-github-square fa-2x"></i>
+                    </a>
+                </li>
+                <!-- Semantic Scholar -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.semanticscholar.org/author/2142635538" target=“_blank”>
+                        <i class="ai ai-semantic-scholar-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Publons -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.webofscience.com/wos/author/record/ACJ-1715-2022"
+                        target=“_blank”>
+                        <i class="ai ai-publons-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Acclaim -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.credly.com/users/vasileios-tsouvalas/badges" target=“_blank”>
+                        <i class="ai ai-acclaim-square ai-2x"></i>
+                    </a>
+                </li>
+                <!-- Coursera -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.coursera.org/user/7b4b955af7730d2d8bf0baf7fbc8381b"
+                        target=“_blank”>
+                        <i class="ai ai-coursera-square ai-2x"></i>
+                    </a>
+                </li>
+
+                <!-- Piazza 
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                            <i class="ai ai-piazza-square ai-2x"></i>
+                        </a>
+                    </li>-->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="img5" style="text-align: left;">
+        <section id="info1" style="padding-top: 100px;">
+            <h1 style="font-family: Ubuntu; padding-left:5%; padding-bottom: 20px; color: white;">
+                Certifications</h1>
+            <h3 style="font-family: Ubuntu; padding-left:5%; padding-bottom: 20px; color: white;">
+                Other than my <a href="cv.html#educationAnchor">BSc and MSc in Electrical and Computer Engineering</a>
+                and
+                my current studies <a href="cv.html#educationAnchor">towards a Computer Science PhD</a>,
+                <br>
+                I enjoy expanding my knowledge on the field of Computer Security and I am constantly pursuing
+                educational opportunities towards this.
+                <br>
+                <br>
+                Below are some of the courses, specializations, and professional certificates that I have completed.
+                (for more information about <br> the obtained certificates and badges, visit <a
+                    href="https://www.coursera.org/user/7b4b955af7730d2d8bf0baf7fbc8381b" target="_blank">my
+                    Coursera</a> and <a href="https://www.credly.com/users/vasileios-tsouvalas" target="_blank">my
+                    Credly (Accaim)</a> profiles).
+            </h3>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="showcase-right">
+                            <!--<h1 style="font-family: Ubuntu; color: black;">Education</h1>-->
+                            <a href="https://coursera.org/share/265db5b3ff4b5b45d57cb039bbf1ff9e" target=“_blank”><img
+                                    src="ibm-cybersecurity-analyst-professional-certificate.png"
+                                    alt="IBM_Certification10" width="60%" height="60%"></a>
+                            <!--<img src="DiplomaLogo.png" width="30%" height="30%">-->
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-7 align-self-center">
+                        <div class="showcase-left">
+                            <h2 style="font-family: Ubuntu;">
+                                <a class="certLink" href="https://www.credly.com/users/vasileios-tsouvalas"
+                                    target=“_blank”>
+                                    IBM Cybersecurity Analyst Professional
+                                    Certificate</a>
+                            </h2>
+
+                            <h4 style="color: #ffffff;">Course duration: 8 months</h4>
+                            <h4 style="color: #ffffff;">Obtained: Dec. 2020</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section id="showcase" style="padding-bottom:100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="showcase-bottom" style="float:center; text-align: center;">
+                            <a href="https://www.credly.com/users/vasileios-tsouvalas" target=“_blank”>
+                                <img src="introduction-to-cybersecurity-tools-cyber-attacks.png"
+                                    alt="IBM_Certification1" width="15%" height="15%">
+                            </a>
+                            <a href="https://www.credly.com/users/vasileios-tsouvalas" target=“_blank”>
+                                <img src="cybersecurity-roles-processes-operating-system-security.png"
+                                    alt="IBM_Certification2" width="15%" height="15%">
+                            </a>
+                            <a href="https://www.credly.com/users/vasileios-tsouvalas" target=“_blank”>
+                                <img src="cybersecurity-compliance-framework-system-administration.png"
+                                    alt="IBM_Certification3" width="15%" height="15%">
+                            </a>
+                            <a href="https://www.credly.com/users/vasileios-tsouvalas" target=“_blank”>
+                                <img src="cybersecurity-breach-case-studies.png" alt="IBM_Certification4" width="15%"
+                                    height="15%">
+                            </a>
+                            <a href="https://www.credly.com/users/vasileios-tsouvalas" target=“_blank”>
+                                <img src="cybersecurity-it-fundamentals-specialization.png" alt="IBM_Certification9"
+                                    width="15%" height="15%">
+                            </a>
+                            <a href="https://www.credly.com/users/vasileios-tsouvalas" target=“_blank”>
+                                <img src="network-security-database-vulnerabilities.png" alt="IBM_Certification5"
+                                    width="15%" height="15%">
+                            </a>
+                            <a href="https://www.credly.com/users/vasileios-tsouvalas" target=“_blank”>
+                                <img src="penetration-testing-incident-response-and-forensics.png"
+                                    alt="IBM_Certification7" width="15%" height="15%">
+                            </a>
+                            <a href="https://www.credly.com/users/vasileios-tsouvalas" target=“_blank”>
+                                <img src="cyber-threat-intelligence.png" alt="IBM_Certification8" width="15%"
+                                    height="15%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="certHr">
+    <div class="img2">
+
+        <section id="info1" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/d52faafe64c153751e3769daef814185"
+                                            target=“_blank”><img src="Infosec_Owasp.png" style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/d52faafe64c153751e3769daef814185"
+                                                target=“_blank”>OWASP Top 10 Specialization
+                                            </a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                            <h4 style="text-align: right; padding-top: -20px; color:white;">INFOSEC
+                            </h4>
+                            <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 1 month</h5>
+                            <h5 style="color:#e7e7e7; text-align: right;">Obtained: Sept. 2023</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="showcase-left">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/67ce8201d7999e0d94915f9ac570bf1d"
+                                            target=“_blank”><img src="Infosec_Advanced_Python.png"
+                                                style="width:103%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/67ce8201d7999e0d94915f9ac570bf1d"
+                                                target=“_blank”>Advanced Python Scripting for Cybersecurity</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">INFOSEC</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 1 month</h5>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: Sept. 2023</h5>
+                            </div>
+                        </div>
+        </section>
+
+        <section id="info1" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/73c9609a1a5896d148aec72a4bfa9bd9"
+                                            target=“_blank”><img src="INFOSEC_Python.png" style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/73c9609a1a5896d148aec72a4bfa9bd9"
+                                                target=“_blank”>Python for Cybersecurity Specialization
+                                            </a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                            <h4 style="text-align: right; padding-top: -20px; color:white;">INFOSEC
+                            </h4>
+                            <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 1 month</h5>
+                            <h5 style="color:#e7e7e7; text-align: right;">Obtained: Sept. 2023</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="showcase-left">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/c4694af359bd89559fcaddff1fa085a4"
+                                            target=“_blank”><img src="INFOSEC_Privacy.png" style="width:103%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/c4694af359bd89559fcaddff1fa085a4"
+                                                target=“_blank”>Privacy Fundamentals Specialization</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">INFOSEC</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 1 month</h5>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: Aug. 2023</h5>
+                            </div>
+                        </div>
+        </section>
+
+        <section id="info1" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/17e9d74b60c1b1ddf6d31c3b8b7a4e89"
+                                            target=“_blank”><img src="CourseraGoogleCyber.png" style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/17e9d74b60c1b1ddf6d31c3b8b7a4e89"
+                                                target=“_blank”>Google Cybersecurity Professional Certificate
+                                            </a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                            <h4 style="text-align: right; padding-top: -20px; color:white;">Google
+                            </h4>
+                            <h5 style="color:#e7e7e7; text-align: right;">Professional Certificate duration: 6 months
+                            </h5>
+                            <h5 style="color:#e7e7e7; text-align: right;">Obtained: Aug. 2023</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="showcase-left">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/53d5452cbe82a663a67f685a0dbd1574"
+                                            target=“_blank”><img src="CourseraEC_Council.png" style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/53d5452cbe82a663a67f685a0dbd1574"
+                                                target=“_blank”>Cybersecurity Attack and Defense Fundamentals</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">EC-Council</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 5 months</h5>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: July 2023</h5>
+                            </div>
+                        </div>
+        </section>
+
+        <section id="info1" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/9c3e068be147a1859a80d7bcbdac3172"
+                                            target=“_blank”><img src="CourseraCiscoNetworkAutomationEngineering.png"
+                                                style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/9c3e068be147a1859a80d7bcbdac3172"
+                                                target=“_blank”>Network Automation Engineering</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">CISCO</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 3 months</h5>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: June 2023</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="showcase-left">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/9db302ab08eab26a2e47eb03bbb0f084"
+                                            target=“_blank”><img src="CourseraISC2_CC.png" style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/9db302ab08eab26a2e47eb03bbb0f084"
+                                                target=“_blank”>Certified in Cybersecurity (CC)</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white; padding-top:-20px;">ISC2</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 1 month</h5>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: June 2023</h5>
+                            </div>
+                        </div>
+        </section>
+
+        <section id="info1" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/263b0e83174a4c02c9dbe3ceb0e6f368"
+                                            target=“_blank”><img src="CourseraPaloAltoNetworks.png"
+                                                style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/263b0e83174a4c02c9dbe3ceb0e6f368"
+                                                target=“_blank”>Palo Alto Networks Cybersecurity</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                            <h4 style="text-align: right; padding-top: -20px; color:white;">Palo Alto Networks
+                            </h4>
+                            <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 1 month</h5>
+                            <h5 style="color:#e7e7e7; text-align: right;">Obtained: June 2023</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="showcase-left">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/cc16c36ff170c7e4e3672975119cc73d"
+                                            target=“_blank”><img src="CourseraINFOSEC_JS_Security.png"
+                                                style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/cc16c36ff170c7e4e3672975119cc73d"
+                                                target=“_blank”>JavaScript Security</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">INFOSEC</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 1 month</h5>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: June 2023</h5>
+                            </div>
+
+                        </div>
+        </section>
+
+        <section id="info1" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/b0a92de46bc28bca3560a2f335c44679"
+                                            target=“_blank”><img src="Coursera V2WULWH6AG93-1.png"
+                                                style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/b0a92de46bc28bca3560a2f335c44679"
+                                                target=“_blank”>
+                                                Google IT Automation with Python</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">Google</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: Oct. 2021</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="showcase-left">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/c0af4ab72fa6ba7c1db33a946fd92281"
+                                            target=“_blank”><img src="Coursera HHHKGLMDUHXR-1.png"
+                                                style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/c0af4ab72fa6ba7c1db33a946fd92281"
+                                                target=“_blank”>Cyber
+                                                Incident Response</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">INFOSEC</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 4 months</h5>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: Aug. 2021</h5>
+                            </div>
+
+                        </div>
+        </section>
+
+        <section id="info1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-left">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/eb1c589f7629a38cdbc6aa6965ad2e3b"
+                                            target=“_blank”><img src="Coursera HXRDM9L5GCPB-1.png"
+                                                style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/eb1c589f7629a38cdbc6aa6965ad2e3b"
+                                                target=“_blank”>Homeland
+                                                Security
+                                                and Cybersecurity</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; padding-top: -20px; color:white;">University of Colorado,
+                                    Colorado Springs
+                                </h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Specialization duration: 4 months</h5>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: Dec. 2020</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/dc41328b01d37ae9b0ba51275347aaf0"
+                                            target=“_blank”><img src="Coursera YLH27ESAD9VY-1.png"
+                                                style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/dc41328b01d37ae9b0ba51275347aaf0"
+                                                target=“_blank”>Usable
+                                                Security</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">University of Maryland, College Park</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: Nov. 2020</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="info1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-left">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="https://coursera.org/share/90fb5a27103d317c84da10341748f5b3"
+                                            target=“_blank”><img src="Coursera 7X8QZ3X4JE8G-1.png"
+                                                style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6">
+                                        <h2>
+                                            <a class="certLink"
+                                                href="https://coursera.org/share/90fb5a27103d317c84da10341748f5b3"
+                                                target=“_blank”>
+                                                Generative
+                                                Adversarial Networks (GANs)</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">DeepLearning.AI</h4>
+                                <h5 style="color:#e7e7e7; text-align: right;">Obtained: Nov. 2020</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 100px;">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="certificate-1.png" target="_blank">
+                                            <img id="myImg" src="certificate-1.png" style="width:110%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink" href="certificate-1.png" target="_blank">
+                                                Digital Marketing</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">Google Digital Garage</h3>
+                                    <h5 style="color:#e7e7e7; text-align: right;">Obtained: Nov. 2020</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="info1" style="padding-top: 100px;">
+            <h3 style="font-family: Ubuntu; padding-left:5%; padding-bottom: 20px; color: white;">
+                For more information about the obtained certificates and badges,<br>visit <a
+                    href="https://www.coursera.org/user/7b4b955af7730d2d8bf0baf7fbc8381b" target="_blank">my
+                    Coursera</a> and <a href="https://www.credly.com/users/vasileios-tsouvalas" target="_blank">my
+                    Credly (Accaim)</a> profiles).
+            </h3>
+            <br>
+        </section>
+        <!--
+        <section id="info1" style="padding-bottom: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="info-right">
+                            <div class="container">
+                                <div class="row align-items-center" style="font-family: Ubuntu;">
+                                    <div class="col-md-5 col-sm-5">
+                                        <a href="certificate-1.png" target="_blank">
+                                            <img id="myImg" src="certificate-1.png" style="width:100%;"></a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h2>
+                                            <a class="certLink" href="certificate-1.png" target="_blank">
+                                                Digital Marketing</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <hr style="box-shadow: 0 10px 10px -10px rgb(113, 196, 252) inset;">
+                                <h4 style="text-align: right; color:white;">Google Digital Garage</h3>
+                                    <h5 style="color:#e7e7e7; text-align: right;">Obtained: Nov. 2020</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+    </div>
+
+    <!--
+    <section id="info1" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="info-left">
+                        <div class="container">
+                            <div class="row align-items-center" style="font-family: Ubuntu; color: black;">
+                                <div class="col-md-5">
+                                    <div class="image-link">
+                                        <img id="myImg" src="certificate-1.png" style="width:100%;">
+                                        <div id="myModal" class="modal">
+
+                                            <span class="close">&times;</span>
+
+                                            <img class="modal-content" id="img01">
+
+                                            <div id="caption"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <h2>Digital Marketing
+                                    </h2>
+                                </div>
+                            </div>
+                            <h3>Google Digital Garage</h3>
+                            <h5 style="color:#6b6b6b">Obtained: Nov. 2020</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- TryHackMe -->
+    <hr class="certHr">
+    <div class="img10">
+        <section id="showcase" style="padding-bottom: 150px; padding-top: 100px;">
+            <div class="info-left" style="float:left; text-align: left; justify-content:left;">
+                <h1
+                    style="font-family: Ubuntu; padding-left: 50px; padding-bottom: 70px; color: white; text-align:left;">
+                    TryHackMe:
+                    <a href="https://tryhackme.com/p/Billy.Tsouvalas" target="_blank"
+                        style="font-family: Ubuntu; text-align: center; font-size: 40px; ">Billy.Tsouvalas
+                        [0x8][H4CK3R]</a>
+                </h1>
+                <h3 style="color:white; width: 80%; padding-left: 50px;">
+                    I have also participated in online CTFs and I enjoy educating myself on penetration testing
+                    techniques, and gaining a deeper understanding of the attacker's perspective.
+                </h3>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="d-block d-sm-none">
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmBlueBadge.png" alt="THM_Blue_Badge" width="59%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Windows Hacking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmOwaspBadge.png" alt="THM_OWASP_Badge" width="64%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    OWASP<br> Course
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmOsintBadge.png" alt="THM_OSINT_Badge" width="68%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:18px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    OSINT<br> Course
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmWebbedBadge.png" alt="THM_Webbed_Badge" width="65%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Web <br>Hacking
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmMetasploitBadge.png" alt="THM_Metasploit_Badge"
+                                        width="53.2%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Metasploit <br>Course
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thm7DayStreakBadge.png" alt="THM_7Streak_Badge"
+                                        width="63.5%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    7-day Streak
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmPentesterBadge.png" alt="THM_Pentester_Badge"
+                                        width="65.6%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:19px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Penetration Tester
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmLinuxBadge.png" alt="THM_Linux_Badge" width="64%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Linux <br>Skills
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmHashCrackerBadge.png" alt="THM_Hash_Badge" width="60%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Hash Cracking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmIceBadge.png" alt="THM_Ice_Badge" width="61.5%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:18px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Media Server<br> Hacking
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-none d-sm-block d-md-none">
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmBlueBadge.png" alt="THM_Blue_Badge" width="59%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Windows Hacking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmOwaspBadge.png" alt="THM_OWASP_Badge" width="64%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    OWASP<br> Course
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmOsintBadge.png" alt="THM_OSINT_Badge" width="68%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:18px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    OSINT<br> Course
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmWebbedBadge.png" alt="THM_Webbed_Badge" width="65%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Web <br>Hacking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmMetasploitBadge.png" alt="THM_Metasploit_Badge"
+                                        width="54.3%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Metasploit <br>Course
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thm7DayStreakBadge.png" alt="THM_7Streak_Badge" width="65%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    7-day Streak
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmPentesterBadge.png" alt="THM_Pentester_Badge"
+                                        width="64%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:19px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Penetration Tester
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmLinuxBadge.png" alt="THM_Linux_Badge" width="62.5%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Linux <br>Skills
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmHashCrackerBadge.png" alt="THM_Hash_Badge" width="58%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Hash Cracking
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmIceBadge.png" alt="THM_Ice_Badge" width="61.5%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:18px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Media Server<br> Hacking
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block d-lg-none">
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmBlueBadge.png" alt="THM_Blue_Badge" width="59%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Windows Hacking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmOwaspBadge.png" alt="THM_OWASP_Badge" width="64%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    OWASP<br> Course
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmOsintBadge.png" alt="THM_OSINT_Badge" width="68%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:18px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    OSINT<br> Course
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmWebbedBadge.png" alt="THM_Webbed_Badge" width="65%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Web <br>Hacking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmMetasploitBadge.png" alt="THM_Metasploit_Badge"
+                                        width="54.3%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Metasploit <br>Course
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thm7DayStreakBadge.png" alt="THM_7Streak_Badge"
+                                        width="63.5%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    7-day Streak
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmPentesterBadge.png" alt="THM_Pentester_Badge"
+                                        width="64%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Penetration Tester
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmLinuxBadge.png" alt="THM_Linux_Badge" width="63%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Linux <br>Skills
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmHashCrackerBadge.png" alt="THM_Hash_Badge" width="60%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Hash Cracking
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmIceBadge.png" alt="THM_Ice_Badge" width="61.5%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:18px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Media Server<br> Hacking
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmBlueBadge.png" alt="THM_Blue_Badge" width="59%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Windows Hacking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmOwaspBadge.png" alt="THM_OWASP_Badge" width="64%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    OWASP<br> Course
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmOsintBadge.png" alt="THM_OSINT_Badge" width="68%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:18px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    OSINT<br> Course
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmWebbedBadge.png" alt="THM_Webbed_Badge" width="65%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Web <br>Hacking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmMetasploitBadge.png" alt="THM_Metasploit_Badge"
+                                        width="54.3%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Metasploit <br>Course
+                                </p>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thm7DayStreakBadge.png" alt="THM_7Streak_Badge" width="63%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    7-day Streak
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmPentesterBadge.png" alt="THM_Pentester_Badge"
+                                        width="64.5%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:19px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Penetration Tester
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank”>
+                                    <img id="thmBadge" src="thmLinuxBadge.png" alt="THM_Linux_Badge" width="64%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Linux <br>Skills
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank” data-toggle="tooltip"
+                                    data-placement="top" title="Tooltip on top">
+                                    <img id="thmBadge" src="thmHashCrackerBadge.png" alt="THM_Hash_Badge" width="60%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:20px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Hash Cracking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="width: 150px; height:250px; border: 1px solid rgb(113, 196, 252); background: transparent;">
+                            <div class="card-img-top" style="text-align: center; padding-top: 20px;">
+                                <a href="https://tryhackme.com/p/Billy.Tsouvalas" target=“_blank” data-toggle="tooltip"
+                                    data-placement="top" title="Tooltip on top">
+                                    <img id="thmBadge" src="thmIceBadge.png" alt="THM_Ice_Badge" width="61.5%">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size:18px; font-family: Ubuntu; color: white; float:center; text-align: center;">
+                                    Media Server<br> Hacking
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </section>
+    </div>
+
+
+    <!---->
+    <hr class="certHr">
+    <div class="img6">
+        <section id="info1" style="padding-top: 50px;">
+            <h3 style="font-family: Ubuntu; padding-left:5%; padding-bottom: 20px; color: white;">
+                Certificates of completion for programming language courses
+            </h3>
+            <br>
+        </section>
+
+        <section id="info1" style="padding-top: 50px; padding-bottom:100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="info-left">
+                            <h2 style="font-family: Ubuntu; color: white;">Sololearn Certificates</h2>
+                            <ul>
+                                <h5 style="font-family: Ubuntu; color:#e7e7e7;">
+                                    <li>
+                                        <div class=" certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1051-2050029/jpg/"
+                                                target=“_blank”>C++</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1073-2050029/jpg/"
+                                                target=“_blank”>
+                                                Python</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1080-2050029/jpg/"
+                                                target=“_blank”>C#</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1068-2050029/jpg/"
+                                                target=“_blank”>
+                                                Java</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1024-2050029/jpg/"
+                                                target=“_blank”>
+                                                Javascript</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1060-2050029/jpg/"
+                                                target=“_blank”>SQL</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1059-2050029/jpg/"
+                                                target=“_blank”>PHP</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1081-2050029/jpg/"
+                                                target=“_blank”>
+                                                Ruby</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1014-2050029/jpg/"
+                                                target=“_blank”>
+                                                HTML</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="certLink">
+                                            <a href="https://www.sololearn.com/Certificate/1023-2050029/jpg/"
+                                                target=“_blank”>CSS</a>
+                                        </div>
+                                    </li>
+                                </h5>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="info-right">
+                            <h2 style="font-family: Ubuntu; color: white;">CodeAcademy Certificates</h2>
+                            <h5 style="font-family: Ubuntu; color:#e7e7e7;">
+                                <ul>
+                                    <li> Git & Version Control</li>
+                                    <li> Terminal and Command Line</li>
+                                </ul>
+                            </h5>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="certHr">
+
+    <div class="footer">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <ul style="list-style-type:none;">
+                    <p style="text-decoration: underline">Sitemap</p>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!--<button class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" type="button" onclick="return NavOnOff();">Hide</button>-->
+                </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <ul style="list-style-type:none;">
+                    <p style="text-decoration: underline">Contact</p>
+                    <li>Billy Tsouvalas,<br>
+                        SBU, Stony Brook, NY<br>
+                        vtsouvalas [at] cs.stonybrook.edu<br>
+                        Tel.: (804)-980-1233<br></li>
+                </ul>
+                <div class="align-items-center row justify-content-around" style="text-align: center;">
+                    <ul class="nav justify-content-center w-100">
+                        <li class="nav-item">
+                            <!-- Linkedin -->
+                            <a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target=“_blank”>
+                                <i class="fa fa-linkedin-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Twitter -->
+                            <a class="nav-link" href="https://twitter.com/BTsouvalas" target=“_blank”>
+                                <i class="fa fa-twitter-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Google Scholar -->
+                            <a class="nav-link" href="https://scholar.google.com/citations?user=9vFc1WAAAAAJ&hl=en"
+                                target=“_blank”>
+                                <i class="ai ai-google-scholar-square ai-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Research Gate -->
+                            <a class="nav-link" href="https://www.researchgate.net/profile/Billy-Tsouvalas" target=“_blank”>
+                                <i class="ai ai-researchgate-square ai-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Orcid -->
+                            <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                                <i class="ai ai-orcid-square ai-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Github -->
+                            <a class="nav-link" href="https://github.com/BillyPragSec" target=“_blank”>
+                                <i class="fa fa-github-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Semantic Scholar -->
+                            <a class="nav-link" href="https://www.semanticscholar.org/author/2142635538" target=“_blank”>
+                                <i class="ai ai-semantic-scholar-square ai-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Publons -->
+                            <a class="nav-link" href="https://www.webofscience.com/wos/author/record/ACJ-1715-2022"
+                                target=“_blank”>
+                                <i class="ai ai-publons-square ai-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Acclaim -->
+                            <a class="nav-link" href="https://www.credly.com/users/vasileios-tsouvalas/badges" target=“_blank”>
+                                <i class="ai ai-acclaim-square ai-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Coursera -->
+                            <a class="nav-link" href="https://www.coursera.org/user/7b4b955af7730d2d8bf0baf7fbc8381b"
+                                target=“_blank”>
+                                <i class="ai ai-coursera-square ai-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <ul style="list-style-type:none;">
+                    <br>
+                    <br>
+                    <br>
+                    <li><a href="#top">Back to top of page</a></li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="footer__copyright">
+                        Last update: November 2024
+                        <br>
+                        Billy Tsouvalas &copy; 2024
+                    </div>
+                    <!--<button class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" type="button" onclick="return NavOnOff();">Hide</button>-->
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+
+        });
+    </script>
+
+    <!-- <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.showcase-left', {
+            duration: 1000,
+            origin: 'top',
+            distance: '10px'
+        });
+        sr.reveal('.showcase-right', {
+            duration: 1000,
+            origin: 'right',
+            distance: '10px'
+        });
+        sr.reveal('.showcase-bottom', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '10px'
+        });
+        sr.reveal('.showcase-btn', {
+            duration: 1000,
+            delay: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal('#testimonial div', {
+            duration: 1000,
+            origin: 'bottom'
+        });
+        sr.reveal('.info-left', {
+            duration: 1000,
+            origin: 'left',
+            distance: '10px',
+            viewFactor: 0.2
+        });
+        sr.reveal('.info-right', {
+            duration: 1000,
+            origin: 'right',
+            distance: '10px',
+            viewFactor: 0.2
+        });
+    </script>
+
+    <script>
+        $(function () {
+            // Smooth Scrolling
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script> -->
+    <!--
+    <script>
+
+        $(document).ready(function () {
+            document.getElementById("box-wrap").addEventListener("mouseover", function () {
+                document.getElementById("thmBadge").addEventListener("mouseout", function () {
+                    document.getElementById("thmBadge").style.filter = "blur(0px)";
+                });
+            })
+        });
+    </script>
+-->
+</body>
+
+</html>
