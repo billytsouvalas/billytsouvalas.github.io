@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog — Billy Tsouvalas</title>
+    <meta name="description" content="Blog posts by Billy Tsouvalas on cybersecurity research, systems security, and related topics.">
+    <meta property="og:title" content="Blog — Billy Tsouvalas">
+    <meta property="og:description" content="Blog posts on cybersecurity research, systems security, and related topics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tsouvalas.xyz/blog.html">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Bootstrap 5 -->
@@ -12,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 
     <link rel="icon" type="image/x-icon" href="assets/images/TsouvalasCircleCropped.png">
 </head>
@@ -19,14 +27,9 @@
 
 
 <body>
-    <!--
-        Previously:
-            <nav class="navbar navbar-light fixed-top navbar-expand-xl bg-faded justify-content-center"
-    -->
-    <nav class="navbar navbar-light fixed-top navbar-expand-custom bg-faded justify-content-center"
-        style="background-color: #ffffff;">
+    <nav class="navbar navbar-light fixed-top navbar-expand-custom bg-faded justify-content-center">
         <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"><img src="assets/images/TsouvalasCircleCropped.png" width="40"
-                height="40" alt="">
+                height="40" alt="Billy Tsouvalas"> <span class="navbar-brand-name ms-2">Billy Tsouvalas</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
@@ -46,28 +49,8 @@
                     <a class="nav-link" href="research.html">Research</a>
                 </li>
 
-                <!--
-                Old version, with Billy Tsouvalas appearing everywhere
-                <li class="nav-item my-auto">
-                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="index.html" style="color: #383838">Billy
-                        Tsouvalas</a>
-                
-                Newer version, with Billy Tsouvalas only appearing between 1500px and the xl from d-xl-block
-                <li class="nav-item my-auto">
-                    <a class="nav-link navbar-brand mx-0 d-none d-xl-block" href="index.html" style="color: #383838">Billy
-                        Tsouvalas</a>  
-                </li>
-                -->
-                <li class="nav-item my-auto">
-                    <a class="nav-link navbar-brand mx-0 d-custom-block" href="index.html" style="color: #383838">Billy
-                        Tsouvalas</a>
-                </li>
-
                 <li class=" nav-item">
                     <a class="nav-link" href="publications.html">Publications</a>
-                </li>
-                <li class=" nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
                 </li>
                 <li class=" nav-item">
                     <a class="nav-link" href="service.html">Service</a>
@@ -79,70 +62,70 @@
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <!-- Linkedin -->
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target=“_blank”>
+                    <a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target="_blank">
                         <i class="fa fa-linkedin-square fa-2x"></i>
                     </a>
                 </li>
                 <!-- Twitter -->
                 <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/BTsouvalas" target=“_blank”>
+                    <a class="nav-link" href="https://twitter.com/BTsouvalas" target="_blank">
                         <i class="fa fa-twitter-square fa-2x"></i>
                     </a>
                 </li>
                 <!-- Google Scholar -->
                 <li class="nav-item">
                     <a class="nav-link" href="https://scholar.google.com/citations?user=9vFc1WAAAAAJ&hl=en"
-                        target=“_blank”>
+                        target="_blank">
                         <i class="ai ai-google-scholar-square ai-2x"></i>
                     </a>
                 </li>
                 <!-- Research Gate -->
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.researchgate.net/profile/Billy-Tsouvalas" target=“_blank”>
+                    <a class="nav-link" href="https://www.researchgate.net/profile/Billy-Tsouvalas" target="_blank">
                         <i class="ai ai-researchgate-square ai-2x"></i></a>
                 </li>
                 <!-- Orcid -->
                 <li class="nav-item">
-                    <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                    <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target="_blank">
                         <i class="ai ai-orcid-square ai-2x"></i>
                     </a>
                 </li>
                 <!-- Github -->
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/BillyPragSec" target=“_blank”>
+                    <a class="nav-link" href="https://github.com/BillyPragSec" target="_blank">
                         <i class="fa fa-github-square fa-2x"></i>
                     </a>
                 </li>
                 <!-- Semantic Scholar -->
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.semanticscholar.org/author/2142635538" target=“_blank”>
+                    <a class="nav-link" href="https://www.semanticscholar.org/author/2142635538" target="_blank">
                         <i class="ai ai-semantic-scholar-square ai-2x"></i>
                     </a>
                 </li>
                 <!-- Publons -->
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.webofscience.com/wos/author/record/ACJ-1715-2022"
-                        target=“_blank”>
+                        target="_blank">
                         <i class="ai ai-publons-square ai-2x"></i>
                     </a>
                 </li>
                 <!-- Acclaim -->
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.credly.com/users/vasileios-tsouvalas/badges" target=“_blank”>
+                    <a class="nav-link" href="https://www.credly.com/users/vasileios-tsouvalas/badges" target="_blank">
                         <i class="ai ai-acclaim-square ai-2x"></i>
                     </a>
                 </li>
                 <!-- Coursera -->
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.coursera.org/user/7b4b955af7730d2d8bf0baf7fbc8381b"
-                        target=“_blank”>
+                        target="_blank">
                         <i class="ai ai-coursera-square ai-2x"></i>
                     </a>
                 </li>
 
                 <!-- Piazza 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                        <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target="_blank">
                             <i class="ai ai-piazza-square ai-2x"></i>
                         </a>
                     </li>-->
@@ -157,7 +140,7 @@
 
     <div class="img9" style="text-align:left; padding-bottom: 100px; padding-top: 150px;">
         <section id="info1" style="padding-bottom: 50px;">
-            <h1 style="font-family: Ubuntu; padding-left:5%; padding-bottom: 50px; color: white;">
+            <h1 style=" padding-left:5%; padding-bottom: 50px; color: var(--text-bright);">
                 Coming Soon....</h1>
             <br>
             <br>
@@ -199,14 +182,13 @@
         <br>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <ul style="list-style-type:none;">
-                    <p style="text-decoration: underline">Sitemap</p>
+                <ul class="list-unstyled">
+                    <p class="footer-heading">Sitemap</p>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="cv.html">CV</a></li>
                     <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="research.html">Research</a></li>
                     <li><a href="publications.html">Publications</a></li>
-                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="service.html">Service</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <!--<button class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" type="button" onclick="return NavOnOff();">Hide</button>-->
@@ -214,75 +196,75 @@
             </div>
 
             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <ul style="list-style-type:none;">
-                    <p style="text-decoration: underline">Contact</p>
+                <ul class="list-unstyled">
+                    <p class="footer-heading">Contact</p>
                     <li>Billy Tsouvalas,<br>
                         SBU, Stony Brook, NY<br>
                         vtsouvalas [at] cs.stonybrook.edu<br>
                         Tel.: (804)-980-1233<br></li>
                 </ul>
-                <div class="align-items-center row justify-content-around" style="text-align: center;">
+                <div class="align-items-center row justify-content-around" >
                     <ul class="nav justify-content-center w-100">
                         <li class="nav-item">
                             <!-- Linkedin -->
-                            <a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target=“_blank”>
+                            <a class="nav-link" href="https://www.linkedin.com/in/billy-tsouvalas-354997147/" target="_blank">
                                 <i class="fa fa-linkedin-square fa-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Twitter -->
-                            <a class="nav-link" href="https://twitter.com/BTsouvalas" target=“_blank”>
+                            <a class="nav-link" href="https://twitter.com/BTsouvalas" target="_blank">
                                 <i class="fa fa-twitter-square fa-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Google Scholar -->
                             <a class="nav-link" href="https://scholar.google.com/citations?user=9vFc1WAAAAAJ&hl=en"
-                                target=“_blank”>
+                                target="_blank">
                                 <i class="ai ai-google-scholar-square ai-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Research Gate -->
-                            <a class="nav-link" href="https://www.researchgate.net/profile/Billy-Tsouvalas" target=“_blank”>
+                            <a class="nav-link" href="https://www.researchgate.net/profile/Billy-Tsouvalas" target="_blank">
                                 <i class="ai ai-researchgate-square ai-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Orcid -->
-                            <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target=“_blank”>
+                            <a class="nav-link" href="https://orcid.org/0000-0002-8441-6489" target="_blank">
                                 <i class="ai ai-orcid-square ai-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Github -->
-                            <a class="nav-link" href="https://github.com/BillyPragSec" target=“_blank”>
+                            <a class="nav-link" href="https://github.com/BillyPragSec" target="_blank">
                                 <i class="fa fa-github-square fa-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Semantic Scholar -->
-                            <a class="nav-link" href="https://www.semanticscholar.org/author/2142635538" target=“_blank”>
+                            <a class="nav-link" href="https://www.semanticscholar.org/author/2142635538" target="_blank">
                                 <i class="ai ai-semantic-scholar-square ai-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Publons -->
                             <a class="nav-link" href="https://www.webofscience.com/wos/author/record/ACJ-1715-2022"
-                                target=“_blank”>
+                                target="_blank">
                                 <i class="ai ai-publons-square ai-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Acclaim -->
-                            <a class="nav-link" href="https://www.credly.com/users/vasileios-tsouvalas/badges" target=“_blank”>
+                            <a class="nav-link" href="https://www.credly.com/users/vasileios-tsouvalas/badges" target="_blank">
                                 <i class="ai ai-acclaim-square ai-2x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- Coursera -->
                             <a class="nav-link" href="https://www.coursera.org/user/7b4b955af7730d2d8bf0baf7fbc8381b"
-                                target=“_blank”>
+                                target="_blank">
                                 <i class="ai ai-coursera-square ai-2x"></i>
                             </a>
                         </li>
@@ -291,7 +273,7 @@
             </div>
 
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <ul style="list-style-type:none;">
+                <ul class="list-unstyled">
                     <br>
                     <br>
                     <br>
@@ -301,9 +283,9 @@
                     <br>
                     <br>
                     <div class="footer__copyright">
-                        Last update: November 2024
+                        Last update: March 2026
                         <br>
-                        Billy Tsouvalas &copy; 2024
+                        Billy Tsouvalas &copy; <script>document.write(new Date().getFullYear())</script>
                     </div>
                     <!--<button class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1" type="button" onclick="return NavOnOff();">Hide</button>-->
                 </ul>
