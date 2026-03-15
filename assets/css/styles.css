@@ -247,18 +247,6 @@ ul.nav.navbar-nav.ml-auto.w-100.justify-content-end {
   display: block !important;
 }
 
-/* "Billy Tsouvalas" name visibility */
-@media (min-width: 1500px) {
-  .d-custom-block {
-    display: block;
-  }
-}
-@media (max-width: 1500px) {
-  .d-custom-block {
-    display: none;
-  }
-}
-
 /* ==========================================================================
    Avatar
    ========================================================================== */
@@ -273,192 +261,6 @@ ul.nav.navbar-nav.ml-auto.w-100.justify-content-end {
 .avatar:hover {
   border-color: var(--accent-hover);
   box-shadow: 0 0 40px rgba(0, 212, 170, 0.35);
-}
-
-/* ==========================================================================
-   Parallax Background Sections
-   ========================================================================== */
-.parallax-section {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.parallax-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(10, 25, 47, 0.7);
-  z-index: 0;
-}
-
-.parallax-section > * {
-  position: relative;
-  z-index: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .parallax-section,
-  .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11 {
-    background-attachment: inherit;
-  }
-}
-
-/* Individual background images */
-.img1 {
-  background-image: url("../images/bg/atanas-teodosiev-EzoGykQmUYI-unsplash.jpg");
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img2 {
-  background-image: url("../images/bg/josh-rose-trYl7JYATH0-unsplash.jpg");
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-
-.img3 {
-  background-image: url("../images/bg/david-werbrouck-RfXv1snaYEI-unsplash.jpg");
-  padding-top: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-
-.img4 {
-  background-image: linear-gradient(to right, rgba(10, 25, 47, 0.3), rgba(10, 25, 47, 0.6));
-  padding-top: 200px;
-  padding-bottom: 200px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-
-.img5 {
-  background-image: url("../images/bg/jared-arango-1-mh6U3qeGQ-unsplash.jpg");
-  padding-top: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-
-.img6 {
-  background-image: url("../images/bg/boris-stefanik-wxJscL5ZzDA-unsplash.jpg");
-  padding-top: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img7 {
-  background-image: url("../images/bg/adolfo-felix-4JL_VAgxwcU-unsplash.jpg");
-  padding-top: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img8 {
-  background-image: url("../images/bg/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
-  padding-top: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img9 {
-  background-image: url("../images/bg/giammarco-xLhKkk2tKkA-unsplash.jpg");
-  padding-top: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img10 {
-  background-image: url("../images/bg/adam-birkett-_IrFSypwykg-unsplash.jpg");
-  padding-top: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img11 {
-  background-image: url("../images/bg/joshua-rivera-usmhPmT5sj0-unsplash.jpg");
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-
-/* ==========================================================================
-   Content Sections
-   ========================================================================== */
-.text {
-  background-color: var(--bg-secondary);
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
-  font-family: var(--font-heading);
-  border: 0;
-  box-shadow: inset 0 1px 0 var(--border);
-  color: var(--text-bright);
-  padding: 2rem 1rem;
-}
-
-.section-heading {
-  font-family: var(--font-heading);
-  color: var(--text-bright);
-  padding-left: 5%;
-  padding-bottom: 2rem;
-}
-
-.section-year {
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: 0.05em;
-}
-
-.section-content {
-  color: var(--text-primary);
-  font-family: var(--font-body);
 }
 
 /* ==========================================================================
@@ -566,76 +368,6 @@ ul.nav.navbar-nav.ml-auto.w-100.justify-content-end {
   text-decoration: none;
 }
 
-.certHr {
-  display: block;
-  margin-top: 0.1em;
-  margin-bottom: 0;
-  padding-top: 0;
-  border: 0;
-  height: 0;
-  box-shadow: none;
-}
-
-.badgeCard {
-  display: inline-block;
-}
-
-#imgLink {
-  color: var(--text-primary);
-}
-
-#imgLink:hover {
-  filter: grayscale(0%);
-  color: var(--accent);
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-#thmBadge {
-  border-radius: 10%;
-  opacity: 0.8;
-  transition: all var(--transition-base);
-}
-
-#thmBadge:hover {
-  filter: brightness(1.2);
-  color: var(--accent);
-  cursor: pointer;
-  opacity: 1;
-  transform: scale(1.2);
-  animation: badge-glow 2s infinite;
-}
-
-@keyframes badge-glow {
-  0% { filter: brightness(0.9); }
-  50% { filter: brightness(1.4); }
-  100% { filter: brightness(0.9); }
-}
-
-/* ==========================================================================
-   Items (research/CV entries)
-   ========================================================================== */
-.item {
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  width: 100%;
-  height: auto;
-  min-height: 80px;
-  margin: 1.5rem auto;
-  padding: 1rem 1.5rem;
-  background: var(--bg-card);
-  color: var(--text-primary);
-  font-size: 1.1em;
-  font-family: var(--font-body);
-  text-align: center;
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.item:hover {
-  border-color: var(--accent);
-  box-shadow: 0 4px 20px var(--shadow);
-}
 
 /* ==========================================================================
    Horizontal Rules
@@ -798,10 +530,6 @@ hr {
    Responsive
    ========================================================================== */
 @media screen and (max-width: 768px) {
-  .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11 {
-    background-attachment: inherit;
-  }
-
   body {
     font-size: 15px;
   }
@@ -857,11 +585,6 @@ hr {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 20% 50%, rgba(0, 212, 170, 0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(0, 121, 190, 0.10) 0%, transparent 50%),
-    radial-gradient(ellipse at 60% 80%, rgba(0, 212, 170, 0.06) 0%, transparent 40%),
-    var(--bg-primary);
   z-index: 0;
 }
 
@@ -1933,4 +1656,179 @@ hr {
   border-color: var(--accent);
   color: var(--accent);
   transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   Animated Gradient Mesh (Hero)
+   ========================================================================== */
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-bg {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(0, 212, 170, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 121, 190, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(0, 212, 170, 0.06) 0%, transparent 40%),
+    var(--bg-primary);
+  background-size: 200% 200%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* ==========================================================================
+   Navbar Shrink on Scroll
+   ========================================================================== */
+.navbar {
+  transition: padding var(--transition-base), backdrop-filter var(--transition-base), box-shadow var(--transition-base);
+}
+
+.navbar.scrolled {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(2, 12, 27, 0.5);
+}
+
+/* ==========================================================================
+   Scroll-to-Top Button
+   ========================================================================== */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity var(--transition-base), visibility var(--transition-base), transform var(--transition-base), background-color var(--transition-fast);
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 6px 20px rgba(0, 212, 170, 0.5);
+}
+
+/* ==========================================================================
+   Card Hover Glow
+   ========================================================================== */
+.research-card:hover,
+.cert-card:hover,
+.thm-badge-card:hover,
+.prog-cert-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 212, 170, 0.12);
+}
+
+.cv-entry:hover {
+  box-shadow: 0 4px 20px rgba(0, 212, 170, 0.1);
+}
+
+.pub-entry:hover {
+  box-shadow: 0 4px 20px rgba(0, 212, 170, 0.1);
+}
+
+.service-entry:hover {
+  box-shadow: 0 4px 20px rgba(0, 212, 170, 0.1);
+}
+
+.award-card:hover {
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.1);
+}
+
+/* ==========================================================================
+   Typewriter Effect (Hero)
+   ========================================================================== */
+.typewriter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 2rem;
+  min-height: 1.6em;
+}
+
+.typewriter-prefix {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+.typewriter-text {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background: var(--accent);
+  margin-left: 2px;
+  animation: blink-cursor 0.75s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ==========================================================================
+   View Transitions API
+   ========================================================================== */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+/* ==========================================================================
+   Prefers Reduced Motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero-bg {
+    animation: none;
+  }
+
+  .typewriter-cursor {
+    animation: none;
+    opacity: 1;
+  }
+
+  .scroll-top {
+    transition: none;
+  }
 }

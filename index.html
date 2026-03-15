@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 
     <link rel="icon" type="image/x-icon" href="assets/images/TsouvalasCircleCropped.png">
+    <meta name="view-transition" content="same-origin">
 </head>
 
 <body>
@@ -105,6 +106,11 @@
                         <p class="hero-label">PhD Candidate &amp; Research Assistant</p>
                         <h1 class="hero-name">Billy Tsouvalas</h1>
                         <p class="hero-affiliation">Stony Brook University — Computer Science Department</p>
+                        <div class="typewriter-wrapper">
+                            <span class="typewriter-prefix">Research focus:&nbsp;</span>
+                            <span class="typewriter-text" id="typewriter"></span>
+                            <span class="typewriter-cursor"></span>
+                        </div>
                         <div class="hero-interests">
                             <span class="interest-tag">Web Security</span>
                             <span class="interest-tag">Deceptive Defenses</span>
@@ -459,6 +465,42 @@
             });
         })();
     </script>
+
+    <script>
+        (function () {
+            var words = ['Web Security', 'Deceptive Defenses', 'Malware Analysis', 'Critical Infrastructure', 'Network Security', 'Intrusion Detection'];
+            var el = document.getElementById('typewriter');
+            if (!el) return;
+            var wordIdx = 0, charIdx = 0, deleting = false;
+            var typeSpeed = 80, deleteSpeed = 40, pauseEnd = 2000, pauseStart = 500;
+
+            function tick() {
+                var current = words[wordIdx];
+                if (deleting) {
+                    el.textContent = current.substring(0, charIdx--);
+                    if (charIdx < 0) {
+                        deleting = false;
+                        wordIdx = (wordIdx + 1) % words.length;
+                        setTimeout(tick, pauseStart);
+                        return;
+                    }
+                    setTimeout(tick, deleteSpeed);
+                } else {
+                    el.textContent = current.substring(0, charIdx++);
+                    if (charIdx > current.length) {
+                        deleting = true;
+                        setTimeout(tick, pauseEnd);
+                        return;
+                    }
+                    setTimeout(tick, typeSpeed);
+                }
+            }
+            setTimeout(tick, 1000);
+        })();
+    </script>
+
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
