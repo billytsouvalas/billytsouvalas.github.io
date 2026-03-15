@@ -732,9 +732,45 @@ hr {
 /* ==========================================================================
    Timeline
    ========================================================================== */
+.timeline-scroll-outer {
+  position: relative;
+}
+
+.timeline-scroll-wrap {
+  max-height: 420px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+.timeline-scroll-wrap::-webkit-scrollbar {
+  width: 4px;
+}
+
+.timeline-scroll-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.timeline-scroll-wrap::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.timeline-scroll-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to bottom, transparent, var(--bg-secondary));
+  pointer-events: none;
+  z-index: 1;
+}
+
 .timeline {
   position: relative;
   padding-left: 40px;
+  padding-bottom: 20px;
 }
 
 .timeline::before {
@@ -747,9 +783,6 @@ hr {
   background: var(--border);
 }
 
-.news-hidden {
-  display: none;
-}
 
 .timeline-item {
   position: relative;
@@ -2051,6 +2084,10 @@ hr {
 [data-theme="light"] .timeline-marker {
   border-color: var(--accent);
   background: var(--bg-primary);
+}
+
+[data-theme="light"] .timeline-scroll-fade {
+  background: linear-gradient(to bottom, transparent, var(--bg-secondary));
 }
 
 [data-theme="light"] .footer {
