@@ -155,7 +155,7 @@ a.nav-link:focus {
 }
 
 .navbar a.nav-link.active {
-  color: #fff !important;
+  color: var(--text-bright) !important;
   text-shadow: 0 0 10px rgba(0, 212, 170, 0.6), 0 0 20px rgba(0, 212, 170, 0.3);
 }
 
@@ -1098,6 +1098,12 @@ hr {
   border-radius: 10px;
   padding: 1.5rem 2rem;
   height: 100%;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.prog-cert-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .prog-cert-card h3 {
@@ -1794,6 +1800,272 @@ hr {
 }
 
 /* ==========================================================================
+   Scroll Progress Indicator
+   ========================================================================== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  z-index: 9999;
+  transition: none;
+  box-shadow: 0 0 8px rgba(0, 212, 170, 0.4);
+}
+
+/* ==========================================================================
+   Glitch Text Effect (Hero Name)
+   ========================================================================== */
+.hero-name.glitch {
+  position: relative;
+  animation: glitch-skew 1s ease forwards;
+}
+
+.hero-name.glitch::before,
+.hero-name.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-name.glitch::before {
+  color: #0ff;
+  animation: glitch-before 1s ease forwards;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+}
+
+.hero-name.glitch::after {
+  color: #f0f;
+  animation: glitch-after 1s ease forwards;
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+}
+
+@keyframes glitch-before {
+  0%   { transform: translate(0); opacity: 0; }
+  10%  { transform: translate(-3px, -2px); opacity: 0.8; }
+  20%  { transform: translate(3px, 1px); opacity: 0.6; }
+  30%  { transform: translate(-2px, 2px); opacity: 0.7; }
+  40%  { transform: translate(2px, -1px); opacity: 0.5; }
+  50%  { transform: translate(-1px, 1px); opacity: 0.3; }
+  60%  { transform: translate(1px, 0); opacity: 0.2; }
+  70%  { transform: translate(0); opacity: 0.1; }
+  100% { transform: translate(0); opacity: 0; }
+}
+
+@keyframes glitch-after {
+  0%   { transform: translate(0); opacity: 0; }
+  10%  { transform: translate(3px, 2px); opacity: 0.8; }
+  20%  { transform: translate(-3px, -1px); opacity: 0.6; }
+  30%  { transform: translate(2px, -2px); opacity: 0.7; }
+  40%  { transform: translate(-2px, 1px); opacity: 0.5; }
+  50%  { transform: translate(1px, -1px); opacity: 0.3; }
+  60%  { transform: translate(-1px, 0); opacity: 0.2; }
+  70%  { transform: translate(0); opacity: 0.1; }
+  100% { transform: translate(0); opacity: 0; }
+}
+
+@keyframes glitch-skew {
+  0%   { transform: skew(0deg); }
+  10%  { transform: skew(-2deg); }
+  20%  { transform: skew(1.5deg); }
+  30%  { transform: skew(-1deg); }
+  40%  { transform: skew(0.5deg); }
+  50%  { transform: skew(0deg); }
+  100% { transform: skew(0deg); }
+}
+
+/* ==========================================================================
+   Custom Cursor Accent (Interactive Elements)
+   ========================================================================== */
+@media (pointer: fine) {
+  .research-card,
+  .cert-card,
+  .thm-badge-card,
+  .prog-cert-card,
+  .cv-entry,
+  .pub-entry,
+  .service-entry,
+  .award-card,
+  .btn,
+  .nav-link,
+  .timeline-content a,
+  .interest-tag,
+  .footer-socials a {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .research-card::after,
+  .cert-card::after,
+  .thm-badge-card::after,
+  .prog-cert-card::after,
+  .btn::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    opacity: 0;
+    border: 1.5px solid var(--accent);
+    box-shadow: 0 0 15px rgba(0, 212, 170, 0.15), inset 0 0 15px rgba(0, 212, 170, 0.05);
+    transition: opacity var(--transition-base);
+    pointer-events: none;
+  }
+
+  .research-card:hover::after,
+  .cert-card:hover::after,
+  .thm-badge-card:hover::after,
+  .prog-cert-card:hover::after,
+  .btn:hover::after {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Dark / Light Mode Toggle
+   ========================================================================== */
+.theme-toggle {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.5rem;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+/* Sun/Moon SVG icons */
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--text-secondary);
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke var(--transition-fast);
+}
+
+.theme-toggle:hover svg {
+  stroke: var(--accent);
+}
+
+.theme-toggle .icon-sun { display: block; }
+.theme-toggle .icon-moon { display: none; }
+
+[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+
+/* Light Mode Variables */
+[data-theme="light"] {
+  --bg-primary: #f8f9fc;
+  --bg-secondary: #eef1f6;
+  --bg-card: #ffffff;
+  --bg-nav: rgba(248, 249, 252, 0.95);
+
+  --accent: #00a884;
+  --accent-hover: #00c49a;
+  --accent-dim: rgba(0, 168, 132, 0.1);
+
+  --text-primary: #3a3f58;
+  --text-secondary: #6b7394;
+  --text-bright: #1a1f36;
+  --text-link: #008a6e;
+
+  --border: #d8dde8;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="light"] .navbar {
+  background-color: var(--bg-nav) !important;
+}
+
+[data-theme="light"] .navbar-toggler-icon {
+  filter: invert(0.5);
+}
+
+[data-theme="light"] .hero-bg {
+  background: radial-gradient(ellipse at 20% 50%, rgba(0, 168, 132, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 100, 170, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(0, 168, 132, 0.04) 0%, transparent 40%),
+    var(--bg-primary);
+  background-size: 200% 200%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+[data-theme="light"] .loader-wrapper {
+  background: var(--bg-primary);
+}
+
+[data-theme="light"] .loader {
+  border-color: var(--border);
+}
+
+[data-theme="light"] .loader-inner {
+  border-top-color: var(--accent);
+}
+
+[data-theme="light"] .scroll-progress {
+  box-shadow: 0 0 8px rgba(0, 168, 132, 0.3);
+}
+
+[data-theme="light"] .interest-tag {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border-color: rgba(0, 168, 132, 0.2);
+}
+
+[data-theme="light"] .timeline::before {
+  background: var(--border);
+}
+
+[data-theme="light"] .timeline-marker {
+  border-color: var(--accent);
+  background: var(--bg-primary);
+}
+
+[data-theme="light"] .footer {
+  background: #e8ecf2;
+}
+
+[data-theme="light"] .scroll-top {
+  box-shadow: 0 4px 15px rgba(0, 168, 132, 0.25);
+}
+
+[data-theme="light"] .page-header {
+  background: var(--bg-secondary);
+}
+
+/* ==========================================================================
    View Transitions API
    ========================================================================== */
 @view-transition {
@@ -1831,4 +2103,14 @@ hr {
   .scroll-top {
     transition: none;
   }
+
+  .hero-name.glitch::before,
+  .hero-name.glitch::after {
+    display: none;
+  }
+
+  .hero-name.glitch {
+    animation: none;
+  }
+
 }
